@@ -10,6 +10,7 @@
     <title>WARUNG MASAKAN JAWA</title>
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet">
+    <link href="style_tabel.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
     <link href="responsive.css" rel="stylesheet">
@@ -177,21 +178,365 @@
      <section class="caviar-testimonials-area" id="testimonial">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="testimonials-content">
+                    <div class="col-12 menu-heading">
                         <div class="section-heading text-center">
                             <h2>Hitung Total Harga Pesanan </h2>
-                            
+                            <br></br> 
+		<div class="perhitungan">
+			<table class="tabel" style="margin-left:auto;margin-right:auto">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Makanan/Minuman</th>
+						<th>Harga</th>
+						<th>Pesan</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Brekecek</td>
+						<td>@ <input type="text" name="harga" id="brekecek" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_brekecek" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>Gado-gado</td>
+						<td>@ <input type="text" name="harga" id="gado" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text"id="harga_gado" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>Karedok</td>
+						<td>@ <input type="text" name="harga" id="karedok" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_karedok" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>4</td>
+						<td>Mangut Beong</td>
+						<td>@ <input type="text" name="harga" id="mangut" value="20000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_mangut" value="0"/></td>
+					</tr>
+					
+					
+					<tr>
+						<td>5</td>
+						<td>Nasi Jamblang</td>
+						<td>@ <input type="text" name="harga" id="nasijamblang" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasijamblang" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>6</td>
+						<td>Nasi Gandul</td>
+						<td>@ <input type="text" name="harga" id="nasigandul" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasigandul" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>7</td>
+						<td>Nasi Grombyang</td>
+						<td>@ <input type="text" name="harga" id="nasigrombyang" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasigrombyang" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>8</td>
+						<td>Nasi Lengko</td>
+						<td>@ <input type="text" name="harga" id="nasilengko" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasilengko" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>9</td>
+						<td>Nasi Liwet</td>
+						<td>@ <input type="text" name="harga" id="nasiliwet" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasiliwet" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>10</td>
+						<td>Nasi Tumpang</td>
+						<td>@ <input type="text" name="harga" id="nasitumpang" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasitumpang" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>11</td>
+						<td>Rawon</td>
+						<td>@ <input type="text" name="harga" id="rawon" value="25000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_rawon" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>12</td>
+						<td>Cah Kangkung</td>
+						<td>@ <input type="text" name="harga" id="kangkung" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_kangkung" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>13</td>
+						<td>Soto</td>
+						<td>@ <input type="text" name="harga" id="soto" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_soto" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>14</td>
+						<td>Tahu Gejrot</td>
+						<td>@ <input type="text" name="harga" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_tahugejrot" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>15</td>
+						<td>Taoge Goreng</td>
+						<td>@ <input type="text" name="harga" id="taoge" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_taoge" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>16</td>
+						<td>Tempe Mendoan</td>
+						<td>@ <input type="text" name="harga" id="tempe" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_tempe" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>17</td>
+						<td>Es Cendol</td>
+						<td>@ <input type="text" name="harga" id="cendol" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_cendol" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>18</td>
+						<td>Bajigur</td>
+						<td>@ <input type="text" name="harga" id="bajigur" value="1000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_bajigur" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>19</td>
+						<td>Es Doger</td>
+						<td>@ <input type="text" name="harga" id="doger" value="18000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_doger" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>20</td>
+						<td>Es Rujak Serut</td>
+						<td>@ <input type="text" name="harga" id="serut" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_serut" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>21</td>
+						<td>Es Goyobod</td>
+						<td>@ <input type="text" name="harga" id="goyobod" value="20000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_goyobod" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>22</td>
+						<td>Jamu Beras Kencur</td>
+						<td>@ <input type="text" name="harga" id="kencur" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_kencur" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>23</td>
+						<td>Wedang Ronde</td>
+						<td>@ <input type="text" name="harga" id="ronde" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_ronde" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>24</td>
+						<td>Sekoteng</td>
+						<td>@ <input type="text" name="harga" id="sekoteng" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_sekoteng" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>25</td>
+						<td>STMJ</td>
+						<td>@ <input type="text" name="harga" id="stmj" value="18000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_stmj" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>26</td>
+						<td>Wedang Angsle</td>
+						<td>@ <input type="text" name="harga" id="wedang" value="15000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_wedang" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>27</td>
+						<td>Apem</td>
+						<td>@ <input type="text" name="harga" id="apem" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_apem" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>28</td>
+						<td>Cenil</td>
+						<td>@ <input type="text" name="harga" id="cenil" value="7000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_cenil" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>29</td>
+						<td>Jenang</td>
+						<td>@ <input type="text" name="harga" id="jenang" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_jenang" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>30</td>
+						<td>Klepon</td>
+						<td>@ <input type="text" name="harga" id="klepon" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_klepon" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>31</td>
+						<td>Kucur</td>
+						<td>@ <input type="text" name="harga" id="kucur" value="7000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_kucur" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>32</td>
+						<td>Putu</td>
+						<td>@ <input type="text" name="harga" id="putu" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_putu" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>33</td>
+						<td>Lupis</td>
+						<td>@ <input type="text" name="harga" id="lupis" value="10000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_lupis" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>34</td>
+						<td>Nagasari</td>
+						<td>@ <input type="text" name="harga" id="nagasari" value="7000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nagasari" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>35</td>
+						<td>Gethuk Telo</td>
+						<td>@ <input type="text" name="harga" id="gethuk" value="7000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_gethuk" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>36</td>
+						<td>Nasi Kuning Tumpeng Mini</td>
+						<td>@ <input type="text" name="harga" id="nasikuning" value="75000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasikuning" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>37</td>
+						<td>Es Campur Special</td>
+						<td>@ <input type="text" name="harga" id="escampur" value="25000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_escampur" value="0"/></td>
+					</tr>
+					
+					<tr>
+						<td>38</td>
+						<td>Nasi Rames</td>
+						<td>@ <input type="text" name="harga" id="nasirames" value="18000" size="6" disabled="true"/></td>
+						<td> <input type="text" id="harga_nasirames" value="0"/></td>
+					</tr>
+				</tbody>
+				
+				<tfoot>	
+					<tr style="text-align:right; background-color : lime">
+						<td colspan="3">Total</td>
+						<td><input type="text" id="total" value=""/></td>
+					</tr>
+					
+					<tr style="text-align:right; background-color : lime">
+						<td colspan="3">Tunai</td>
+						<td><input type="text" id="tunai" value=""/></td>
+					</tr>
+					
+					<tr style="text-align:right; background-color : lime">
+						<td colspan="3">Kembali</td>
+						<td><input type="text" id="kembali" value=""/></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		
+		<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			$(".perhitungan").keyup(function() {
+				var hargabrekecek = 15000 * parseInt($('#harga_brekecek').val())
+				var hargagado = 15000 * parseInt($('#harga_gado').val())
+				var hargakaredok = 10000 * parseInt($('#harga_karedok').val())
+				var hargamangut = 20000 * parseInt($('#harga_mangut').val())
+				var harganasijamblang = 15000 * parseInt($('#harga_nasijamblang').val())
+				var harganasigandul = 15000 * parseInt($('#harga_nasigandul').val())
+				var harganasigrombyang = 15000 * parseInt($('#harga_nasigrombyang').val())
+				var harganasilengko = 15000 * parseInt($('#harga_nasilengko').val())
+				var harganasiliwet = 15000 * parseInt($('#harga_nasiliwet').val())
+				var harganasitumpang = 15000 * parseInt($('#harga_nasitumpang').val())
+				var hargarawon = 25000 * parseInt($('#harga_rawon').val())
+				var hargakangkung = 15000 * parseInt($('#harga_kangkung').val())
+				var hargasoto = 15000 * parseInt($('#harga_soto').val())
+				var hargatahugejrot = 10000 * parseInt($('#harga_tahugejrot').val())
+				var hargataoge = 10000 * parseInt($('#harga_taoge').val())
+				var hargatempe = 10000 * parseInt($('#harga_tempe').val())
+				var hargacendol = 15000 * parseInt($('#harga_cendol').val())
+				var hargabajigur = 10000 * parseInt($('#harga_bajigur').val())
+				var hargadoger = 18000 * parseInt($('#harga_doger').val())
+				var hargaserut = 15000 * parseInt($('#harga_serut').val())
+				var hargagoyobod = 20000 * parseInt($('#harga_goyobod').val())
+				var hargakencur = 10000 * parseInt($('#harga_kencur').val())
+				var hargaronde = 10000 * parseInt($('#harga_ronde').val())
+				var hargasekoteng = 15000 * parseInt($('#harga_sekoteng').val())
+				var hargastmj = 18000 * parseInt($('#harga_stmj').val())
+				var hargawedang = 15000 * parseInt($('#harga_wedang').val())
+				var hargaapem = 10000 * parseInt($('#harga_apem').val())
+				var hargacenil = 7000 * parseInt($('#harga_cenil').val())
+				var hargajenang = 10000 * parseInt($('#harga_jenang').val())
+				var hargaklepon = 10000 * parseInt($('#harga_klepon').val())
+				var hargakucur = 7000 * parseInt($('#harga_kucur').val())
+				var hargaputu = 10000 * parseInt($('#harga_putu').val())
+				var hargalupis = 10000 * parseInt($('#harga_lupis').val())
+				var harganagasari = 7000 * parseInt($('#harga_nagasari').val())
+				var hargagethuk = 7000 * parseInt($('#harga_gethuk').val())
+				var harganasikuning = 75000 * parseInt($('#harga_nasikuning').val())
+				var hargaescampur = 25000 * parseInt($('#harga_escampur').val())
+				var hargarames = 18000 * parseInt($('#harga_nasirames').val())
+				
+				var jumlahTotal = hargabrekecek + hargagado + hargakaredok + hargamangut + harganasijamblang + harganasigandul + harganasigrombyang + harganasilengko + harganasiliwet + harganasitumpang + hargarawon + hargakangkung + hargasoto + hargatahugejrot+ hargataoge + hargatempe + hargacendol + hargabajigur + hargadoger + hargaserut + hargagoyobod + hargakencur + hargaronde + hargasekoteng + hargastmj + hargawedang + hargaapem + hargacenil + hargajenang + hargaklepon + hargakucur + hargaputu + hargalupis + harganagasari + hargagethuk + harganasikuning + hargaescampur + hargarames;
+				$("#total").attr("value",jumlahTotal)
+				
+				var tunai = parseInt($("#tunai").val())
+				var kembali = tunai - jumlahTotal;
+				$("#kembali").attr("value",kembali)
+			});
+		</script>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ****** Testimonials Area End ****** -->
-
-    
-
     <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(ini.jpeg)" id="contact">
         <div class="container h-100">
             <div class="row h-100 align-items-center">

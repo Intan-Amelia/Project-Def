@@ -13,9 +13,33 @@
 
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet">
+  
 
     <!-- Responsive CSS -->
     <link href="responsive.css" rel="stylesheet">
+
+
+    <script src="03_menu.js"></script>
+
+    <script>
+        function findMenu()
+        {
+            document.getElementById("menuAll").innerHTML = 'SEMUA MENU : ' + gabungan;
+            document.getElementById("menuMakanan").innerHTML = ' MENU MAKANAN: ' + makanan;
+            document.getElementById("menuMinuman").innerHTML = ' MENU MINUMAN : ' + minuman;
+            document.getElementById("menuJajanan").innerHTML = ' MENU  JAJANAN TRADISIONAL: ' + jajanan;
+            
+            //var textToSearch = 'k';
+            var textToSearch = document.getElementById("cari").value;
+            var filteredArray = gabungan.filter((str)=>{
+                return str.toLowerCase().indexOf(textToSearch.toLowerCase()) >= 0; 
+            });
+            alert('Hasil Menu yang Dicari :' + filteredArray);
+        }	
+        
+    
+    </script>
+    
 </head>
 
 <body>
@@ -85,6 +109,8 @@
                         <h2>DAFTAR MENU LAINNYA </h2>
                     </div>
                 </div>
+         
+
 
                 <div class="col-10">
                     <div class="caviar-projects-menu">
@@ -94,6 +120,35 @@
                             <button data-filter=".lunch">MENU MINNUMAN</button>
                         </div>
                     </div>
+
+                    <div id="search-app" class="container">
+                        <!-- Search form section -->
+                        <section class="my-5 row justify-content-center">
+                                <div class="col-md-6">
+                                    CARI MENU : <input type = 'text' id='cari' value = 'tahu'>
+                                    <div class="input-group-append">
+                                    <button onclick = 'findMenu()'>Cari</button>
+                                    <p id = 'menuAll'></p>
+                                    <p id = 'menuMakanan'></p>
+                                    <p id = 'menuMinuman'></p>
+                                    <p id = 'menuJajanan'></p>	
+                                </div>
+                        </section>
+                        <!-- Search result -->
+                        <section class="row mb-5">
+                            <post-card
+                                v-for="post in searchResult.items"  
+                                v-bind:post="post">
+                            </post-card>
+                        </section>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+                    <script src="/js/search.js"></script>
+
+
 
                     <div class="caviar-menu-slides owl-carousel clearfix">
 
